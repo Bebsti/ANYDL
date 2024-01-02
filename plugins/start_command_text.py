@@ -25,9 +25,9 @@ bot_start_time = time.time()
 async def start(client, message):
     bot_uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - bot_start_time)) 
     joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("JOIN", url="https://t.me/TGBotsCollection")],
+        [InlineKeyboardButton("JoiN @ DRagO", url="https://t.me/Drago_Mafia")],
         [InlineKeyboardButton(
-            "Try", url="https://t.me/TGBotsCollectionbot")]
+            "+ Share +", url="https://t.me/share/url?url=https://t.me/Drago_mafia")]
     ])
     welcomed = f"Hey <b>{message.from_user.first_name}</b>\nThis is Multipurpose Bot that can perform many functions.\n\n/help for More info \n Bot Uptime : {bot_uptime}"
     await message.reply_text(welcomed, reply_markup=joinButton)
